@@ -1,72 +1,525 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Versionamento e Publicação de Site no GitHub</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        SmartCoffee | Café, tecnologia e boas experiências
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="SmartCoffee_Final.css"
+    >
 </head>
+
+
 <body>
-    <h1>Contextos</h1>
-    <h2>Git</h2>
-    <p>Sistema de controle de versão</p>
-    <h2>GitHub</h2>
-    <p>Plataforma de hospedagem de repositório Git</p>
-    <h3>Analogias</h3>
-    <p>Git</p>
-    <p>Sistema de Save ou Salvar</p>
-    <p>commit</p>
-    <p>Ponto salvo</p>
-    <p>GitHub</p>
-    <p>Cópia do histórico de salvamentos</p>
 
-    <h1>Comandos Git</h1>
-    <h2>Git Init</h2>
-    <pre><code>
-        git init - Inicializa repositório e mantem um histórico
-    </code></pre>
-    <h2>Git Status</h2>
-    <pre><code>
-        git status - Podemos visualizar o funcionamento correto do repositório
-    </code></pre>
-    <h2>Git Add</h2>
-    <pre><code>
-        git Add - Para preparar os arquivos da pasta
-        git add nome_pasta ou arquivo
-        git add .
-    </code></pre>
-    <h2>Git Commit</h2>
-    <pre><code>
-        git commit -m "Mensagem que desejo"
-    </code></pre>
-    <h2>Git Log</h2>
-    <pre><code>
-        git log - Irá exibir o histórico de commits
-        git log --oneline - Irá exibir o histórico de commits resumido
-    </code></pre>
-    <h2>Git Branch</h2>
-    <pre><code>
-        git branch - Irá exibir as branches existentes
-        git branch nome_da_branch - Irá criar uma nova branch
-        git chekeout nome_da_branch - Irá alternar para a branch especificada
-        git branch -M main - Irá renomear a branch atual para main
-    </code></pre>
-    <h2>Git Remote</h2>
-    <pre><code>
-        git remote - Irá exibir os remotos configurados
-        git remote add origin url - Irá adicionar um novo remote
-        git push origin main - Irá enviar alterações para o remote
-        git remote add origin link_reoisitorio
-        git remote -v - Irá mostrar a URL configurada do origin
-    </code></pre>
-    <h2>Git Branch</h2>
-    <pre><code>
-        git push - Irá enviar alterações para o remote
-        git push origin main - Irá enviar alterações para o remote e definir a branch atual como upstream
-        git push - Enviar atualizações para o remote
-    </code></pre>
-    
+    <header class="cabecalho-principal">
 
+        <a
+            class="marca"
+            href="#inicio"
+            aria-label="SmartCoffee - voltar ao início"
+        >
+            Smart<span>Coffee</span>
+        </a>
+
+
+        <nav aria-label="Navegação principal">
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cafes">
+                        Produtos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ambiente">
+                        Ambiente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+                <li class="menu-destaque">
+                    <a href="#cafes">
+                        Cardápio
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section
+            id="inicio"
+            class="banner"
+        >
+
+            <header class="banner-conteudo">
+
+                <p class="etiqueta">
+                    Sabores que conectam
+                </p>
+
+                <h1>
+                    Café que conecta pessoas
+                </h1>
+
+                <p class="banner-texto">
+                    Mais que café, uma experiência.
+                    Um espaço para conversar, trabalhar,
+                    estudar e compartilhar boas ideias.
+                </p>
+
+                <a
+                    href="#cafes"
+                    class="botao-principal"
+                >
+                    Ver cardápio
+                </a>
+
+            </header>
+
+
+            <figure class="banner-imagem">
+
+                <img
+                    src="img/cafe_servido.png"
+                    alt="Café servido em uma xícara na SmartCoffee"
+                >
+
+            </figure>
+
+        </section>
+
+
+        <section
+            id="sobre"
+            class="sobre"
+        >
+
+            <figure class="sobre-imagem">
+
+                <img
+                    src="img/sobre.png"
+                    alt="Ambiente acolhedor da SmartCoffee"
+                >
+
+            </figure>
+
+
+            <header class="sobre-cabecalho">
+
+                <p class="etiqueta">
+                    Quem somos
+                </p>
+
+                <h2>
+                    Sobre nós
+                </h2>
+
+            </header>
+
+
+            <p class="sobre-texto">
+                A SmartCoffee combina café de qualidade,
+                tecnologia e um ambiente acolhedor para criar
+                experiências que aproximam pessoas.
+            </p>
+
+
+            <a
+                href="#ambiente"
+                class="botao-secundario"
+            >
+                Saiba mais
+            </a>
+
+        </section>
+
+
+        <section
+            id="cafes"
+            class="cafes"
+        >
+
+            <header class="cabecalho-secao">
+
+                <p class="etiqueta">
+                    Nossos produtos
+                </p>
+
+                <h2>
+                    Nossos cafés
+                </h2>
+
+                <p>
+                    Três escolhas para diferentes momentos
+                    do seu dia.
+                </p>
+
+            </header>
+
+
+            <ul class="lista-cafes">
+
+                <li>
+
+                    <article class="card-cafe">
+
+                        <figure>
+
+                            <img
+                                src="img/capuccino.png"
+                                alt="Cappuccino tradicional servido em uma xícara"
+                            >
+
+                        </figure>
+
+                        <header>
+
+                            <h3>
+                                Cappuccino Tradicional
+                            </h3>
+
+                        </header>
+
+                        <p>
+                            Equilíbrio entre café,
+                            leite e cremosidade.
+                        </p>
+
+                        <strong>
+                            R$ 14,90
+                        </strong>
+
+                    </article>
+
+                </li>
+
+
+                <li>
+
+                    <article class="card-cafe">
+
+                        <figure>
+
+                            <img
+                                src="img/latte.png"
+                                alt="Latte caramelo servido em copo"
+                            >
+
+                        </figure>
+
+                        <header>
+
+                            <h3>
+                                Latte Caramelo
+                            </h3>
+
+                        </header>
+
+                        <p>
+                            Leve, doce e irresistível.
+                        </p>
+
+                        <strong>
+                            R$ 16,90
+                        </strong>
+
+                    </article>
+
+                </li>
+
+
+                <li>
+
+                    <article class="card-cafe">
+
+                        <figure>
+
+                            <img
+                                src="img/espresso.png"
+                                alt="Espresso especial servido em xícara pequena"
+                            >
+
+                        </figure>
+
+                        <header>
+
+                            <h3>
+                                Espresso Especial
+                            </h3>
+
+                        </header>
+
+                        <p>
+                            Intenso como boas conversas.
+                        </p>
+
+                        <strong>
+                            R$ 12,90
+                        </strong>
+
+                    </article>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <section
+            id="ambiente"
+            class="ambiente"
+        >
+
+            <header class="ambiente-conteudo">
+
+                <p class="etiqueta">
+                    Nosso ambiente
+                </p>
+
+                <h2>
+                    Um espaço para boas ideias
+                </h2>
+
+                <p>
+                    Ambiente moderno, confortável e acolhedor.
+                    Um lugar pensado para trabalhar, estudar,
+                    conversar ou simplesmente relaxar.
+                </p>
+
+                <a
+                    href="#contato"
+                    class="botao-principal"
+                >
+                    Conheça nosso espaço
+                </a>
+
+            </header>
+
+
+            <figure class="ambiente-imagem">
+
+                <img
+                    src="img/ambiente_imagem.png"
+                    alt="Espaço interno moderno e acolhedor da SmartCoffee"
+                >
+
+            </figure>
+
+        </section>
+
+
+        <section
+            id="contato"
+            class="contato"
+        >
+
+            <header class="contato-cabecalho">
+
+                <p class="etiqueta">
+                    Contato
+                </p>
+
+                <h2>
+                    Fale com a gente
+                </h2>
+
+                <p>
+                    Tem dúvidas, sugestões ou quer realizar
+                    um evento? Envie uma mensagem para nossa equipe.
+                </p>
+
+            </header>
+
+
+            <form>
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    autocomplete="name"
+                    required
+                >
+
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <label for="mensagem">
+                    Mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <p class="marca-rodape">
+            Smart<span>Coffee</span>
+        </p>
+
+
+        <nav
+            class="rodape-navegacao"
+            aria-label="Navegação do rodapé"
+        >
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cafes">
+                        Produtos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ambiente">
+                        Ambiente
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <nav
+            class="redes-sociais"
+            aria-label="Redes sociais"
+        >
+
+            <ul>
+
+                <li>
+                    <a href="#">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Facebook
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        LinkedIn
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <p class="frase-rodape">
+            Café, tecnologia e boas experiências.
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
